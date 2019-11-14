@@ -5,8 +5,8 @@ def map_to_negative(source)
   counter = 0
   
   while counter < source.length do
-    source[counter] *= -1
-    neg_array << source[counter]
+    neg = source[counter] * -1
+    neg_array << neg
     counter += 1
   end
   neg_array
