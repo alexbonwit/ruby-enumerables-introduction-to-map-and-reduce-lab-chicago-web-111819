@@ -1,6 +1,6 @@
 # My Code here....
 
-def map_to_negative(source)
+def map_to_negativize(source)
   neg_array = []
   counter = 0
   
