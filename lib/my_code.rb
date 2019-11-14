@@ -13,8 +13,14 @@ def map_to_negativize(source)
 end
 
 def map_to_no_change(source)
+  same_array = []
+  counter = 0
   
-  
+  while counter < source.length do
+    same_array << source[counter]
+    counter += 1
+  end
+  same_array
 end
 
 def map_to_double(source)
