@@ -24,8 +24,14 @@ def map_to_no_change(source)
 end
 
 def map_to_double(source)
+  doubled_array = []
+  counter = 0
   
-  
+  while counter < source.length do
+    doubled_array << source[counter] * 2
+    counter += 1
+  end
+  doubled_array
 end
 
 def map_to_square(source)
