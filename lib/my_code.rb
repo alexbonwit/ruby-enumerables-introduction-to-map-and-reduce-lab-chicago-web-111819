@@ -59,6 +59,7 @@ def reduce_to_total(source, start)
     while counter < source.length do
       total += source[counter]
       start = total
+      counter += 1
     end
   end
   start
