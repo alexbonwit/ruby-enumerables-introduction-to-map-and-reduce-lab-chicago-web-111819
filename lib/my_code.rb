@@ -48,18 +48,13 @@ end
 
 
 def reduce_to_total(source, start)
-  total = 0
-  start = start
+  counter = 0
   
-  if start == nil
-    start = 0
+  while counter < source.length do
+    start += source[counter]
+    counter += 1
   end
-  
-  while start < source.length do
-    total += source[start]
-    start += 1
-  end
-  total
+  start
 end
 
 def reduce_to_all_true(source)
