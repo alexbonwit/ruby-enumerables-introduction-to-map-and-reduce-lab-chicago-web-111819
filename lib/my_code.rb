@@ -49,10 +49,8 @@ end
 
 def reduce_to_total(source, start)
   counter = 0
-  
-  if start == nil
-    start = 0
-  end
+  total = 0
+  if start.type?
   
   while counter < source.length do
     start += source[counter]
