@@ -45,35 +45,15 @@ def map_to_square(source)
   squared_array
 end  
 
-def reduce_to_total(source, start)
+def reduce_to_total(source, start = 0)
   counter = 0
-  total = 0
-  if start == true
-    while counter < source.length do
-      start += source[counter]
-      counter += 1
-    end
-    return start
-  else
-    while counter < source.length do
-      total += source[counter]
-      counter += 1
-    end
-  end
-  total
-end
-
-
-# def reduce_to_total(source)
-#   counter = 0
-#   total = 0
   
-#     while counter < source.length do
-#       total += source[counter]
-#       counter += 1
-#     end
-#   total
-# end
+  while counter < source.length do
+    start += source[counter]
+    counter += 1
+  end
+  start
+end
 
 def reduce_to_all_true(source)
   truth = true
