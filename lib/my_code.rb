@@ -49,8 +49,9 @@ end
 
 def reduce_to_total(source, start)
   total = 0
+  start = start
   
-  if start == nil
+  if start == undefined
     start = 0
   end
   
