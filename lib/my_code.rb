@@ -51,7 +51,7 @@ def reduce_to_total(source, start)
   total = 0
   start = start
   
-  if start == undefined
+  if start == nil
     start = 0
   end
   
