@@ -50,12 +50,16 @@ end
 def reduce_to_total(source, start)
   counter = 0
   total = 0
-  if start.type?
-  
-  while counter < source.length do
-    start += source[counter]
-    counter += 1
-  end
+  if start.nil?
+    while counter < source.length do
+      total += source[counter]
+      start = total
+    else
+      while counter < source.length do
+        start += source[counter]
+        counter += 1
+      end
+    end
   start
 end
 
