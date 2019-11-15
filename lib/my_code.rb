@@ -80,7 +80,15 @@ def reduce_to_all_true(source)
 end
 
 def reduce_to_any_true(source)
+  counter = 0
+  truth = false
   
-  
+  while counter < source.length do
+    if source[counter] = true
+      return true
+    end
+    counter += 1
+  end
+  truth
 end  
 
