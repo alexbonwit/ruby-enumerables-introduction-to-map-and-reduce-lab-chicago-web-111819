@@ -52,13 +52,13 @@ def reduce_to_total(source, start)
   total = 0
   if start
     while counter < source.length do
-      total += source[counter]
-      start = total
+      start += source[counter]
+      counter += 1
     end
   else
     while counter < source.length do
-      start += source[counter]
-      counter += 1
+      total += source[counter]
+      start = total
     end
   end
   start
