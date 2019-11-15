@@ -66,12 +66,12 @@ def reduce_to_total(source, start)
 end
 
 def reduce_to_all_true(source)
-  truth = false
+  truth = true
   counter = 0
  
   while counter < source.length do
-    if source[counter] == true
-      truth = true
+    if source[counter] == flase
+      truth = false
       return truth
     end
     counter += 1
