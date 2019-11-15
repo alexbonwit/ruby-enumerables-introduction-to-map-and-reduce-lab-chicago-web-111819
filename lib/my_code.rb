@@ -66,8 +66,17 @@ def reduce_to_total(source, start)
 end
 
 def reduce_to_all_true(source)
-
-
+  truth = false
+  counter = 0
+ 
+  while counter < source.length do
+    if source[counter] == true
+      truth = true
+      return truth
+    end
+    counter += 1
+  end
+  truth
 end
 
 def reduce_to_any_true(source)
