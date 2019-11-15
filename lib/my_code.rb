@@ -85,7 +85,7 @@ def reduce_to_any_true(source)
   truth = false
   
   while counter < source.length do
-    if source[counter] = true
+    if source[counter] == true
       return true
     end
     counter += 1
