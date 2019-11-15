@@ -50,6 +50,10 @@ end
 def reduce_to_total(source, start)
   counter = 0
   
+  if start == nil
+    start = 0
+  end
+  
   while counter < source.length do
     start += source[counter]
     counter += 1
