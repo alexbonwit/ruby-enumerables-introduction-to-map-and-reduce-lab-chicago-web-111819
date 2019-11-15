@@ -47,6 +47,8 @@ end
 
 def reduce_to_total(source, start)
   counter = 0
+  
+
   while counter < source.length do
       start += source[counter]
       counter += 1
@@ -55,16 +57,16 @@ def reduce_to_total(source, start)
 end
 
 
-def reduce_to_total(source)
-  counter = 0
-  total = 0
+# def reduce_to_total(source)
+#   counter = 0
+#   total = 0
   
-    while counter < source.length do
-      total += source[counter]
-      counter += 1
-    end
-  total
-end
+#     while counter < source.length do
+#       total += source[counter]
+#       counter += 1
+#     end
+#   total
+# end
 
 def reduce_to_all_true(source)
   truth = true
