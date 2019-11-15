@@ -55,14 +55,14 @@ def reduce_to_total(source, start)
       start += source[counter]
       counter += 1
     end
+    return start
   else
     while counter < source.length do
       total += source[counter]
-      start = total
       counter += 1
     end
   end
-  start
+  total
 end
 
 def reduce_to_all_true(source)
