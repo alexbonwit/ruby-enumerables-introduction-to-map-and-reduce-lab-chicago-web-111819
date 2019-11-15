@@ -50,7 +50,7 @@ end
 def reduce_to_total(source, start)
   counter = 0
   total = 0
-  if start = empty
+  if start blank?
     while counter < source.length do
       total += source[counter]
       start = total
