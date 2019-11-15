@@ -70,7 +70,7 @@ def reduce_to_all_true(source)
   counter = 0
  
   while counter < source.length do
-    if source[counter] == flase
+    if source[counter] == false
       truth = false
       return truth
     end
